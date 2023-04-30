@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Document";
+}
+
+<h2>Document</h2>
+<h4>->/Media/Document</h4>
+<table class="table">
+    
+        <tr class="x">
+            <th>File Name</th>
+            <th>Download</th>
+            <th>Delete</th>
+        </tr>
+    
+    @foreach (var item in Model)
+    {
+<tr>
+    <td class="x">@item.FileName</td>
+    <td>
+        <input type="button" class="btn btn-success" value="Download"
+               onclick="location.href='@Url.Action("Download", "Document", new { fileName = item.FileName})'" />
+    </td>
+    <td><input type="button" class="btn btn-danger" value="Delete" 
+               onclick="location.href='@Url.Action("Delete", "Document", new { fileName = item.FileName})'" /></td>
+    
+</tr>
+    }
+</table>
+
+

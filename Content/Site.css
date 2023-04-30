@@ -1,0 +1,47 @@
+﻿
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    background-image: url(https://cutewallpaper.org/25/animated-wallpaper-anime-pixel-art/galaxxy-idols-bg-the-lounge-by-nanocanyon-on-newgrounds-pixel-art-background-anime-pixel-art-cool-pixel-art.gif);
+    background-size: cover;
+    color:springgreen;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#body1{
+    background-color:transparent;
+    padding:10px;
+   
+}
+.songplayer{
+    width:100%;
+    max-width:600px;
+}
+.x{
+    background-color:black;
+    color:springgreen;
+    opacity:0.85;
+}
+
+
+

@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+@model HW03_u21481084.Models.FileModel
+<div class="row" id="heading">
+    <h2>myMedia</h2>
+    <h4>File uploading/downloading</h4>
+</div>
+
+<div class="row" id="body1">
+    <div class="col-md-4">
+        <h2>Description</h2>
+        <p class="x">
+            This project demonstrates file uploading and downloading. The user will be able to upload a file to the file type folder.
+            They can then view all files in each folder according to the page selected. Users also have the option to delete these files from the folders.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Option Select</h2>
+
+        
+
+
+
+
+
+        @using (@Html.BeginForm("FileUpload", "Home", FormMethod.Post,
+        new { enctype = "multipart/form-data" }))
+        {
+
+            <div>
+                Document @Html.RadioButton("FileType", "Document")<br />
+                Image @Html.RadioButton("FileType", "Image")<br />
+                Video @Html.RadioButton("FileType", "Video")<br />
+                Music @Html.RadioButton("FileType","Music")<br />
+            </div>
+
+            <input type="file" name="files" id="files" multiple="multiple" />
+            <br>
+
+            <input type="submit" class="btn" id="btnSubmit" name="submit" />
+        }
+
+
+    </div>
+       
+</div>
+    
